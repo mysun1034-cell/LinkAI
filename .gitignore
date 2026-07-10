@@ -1,0 +1,57 @@
+# ── 시크릿 (절대 커밋 금지) ────────────────────────────────
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p12
+*.keystore
+
+# ── Java / Spring Boot / Gradle / Maven ───────────────────
+target/
+build/
+!**/src/**/build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+*.class
+*.jar
+!gradle-wrapper.jar
+!**/gradle/wrapper/gradle-wrapper.jar
+hs_err_pid*
+replay_pid*
+.mvn/timing.properties
+
+# ── Node / React / TypeScript ─────────────────────────────
+node_modules/
+dist/
+.vite/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# ── 로컬 에이전트 / 런타임 산출물 ─────────────────────────
+*.log
+logs/
+tmp/
+*.db
+*.sqlite
+
+# ── IDE / 에디터 ──────────────────────────────────────────
+.idea/
+*.iml
+.vscode/
+!.vscode/extensions.json
+.settings/
+.project
+.classpath
+.factorypath
+
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
